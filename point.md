@@ -1,0 +1,2 @@
+- `ng-app` connect html to angular
+- `ng-model` create variable
