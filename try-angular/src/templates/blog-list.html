@@ -2,7 +2,9 @@
 
 <ul ng-if="items.length > 0">
   <li ng-repeat="item in items">
-    <a ng-href="/blog/{{item.id}}">{{item.title}} {{item.publishDate}}</a>
+    <a ng-href="/try-angular/src/blog/{{item.id}}"
+      >{{item.title}} {{item.publishDate}}</a
+    >
   </li>
 </ul>
 
