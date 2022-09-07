@@ -1,2 +1,7 @@
 - `ng-app` connect html to angular
 - `ng-model` create variable
+- module naming
+  - module
+    - `blogList`
+  - tag
+    - `blog-list`
