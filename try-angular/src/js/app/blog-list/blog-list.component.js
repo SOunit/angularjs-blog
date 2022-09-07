@@ -1,10 +1,11 @@
 'use strict';
 
 angular.module('blogList').component('blogList', {
-  template: `<div class="">
-    <h1 class="new-class">{{title}}</h1>
-    <button ng-click="someClickTest()">Click me!</button>
-  </div>`,
+  // template: `<div class="">
+  //   <h1 class="new-class">{{title}}</h1>
+  //   <button ng-click="someClickTest()">Click me!</button>
+  // </div>`,
+  templateUrl: '/try-angular/src/templates/blog-list.html',
   controller: function ($scope) {
     $scope.title = 'Hi, there';
     $scope.clicks = 0;
