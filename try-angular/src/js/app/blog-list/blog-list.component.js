@@ -5,7 +5,7 @@ angular.module('blogList').component('blogList', {
   //   <h1 class="new-class">{{title}}</h1>
   //   <button ng-click="someClickTest()">Click me!</button>
   // </div>`,
-  templateUrl: '/try-angular/src/templates/blog-list.html',
+  templateUrl: 'templates/blog-list.html',
   controller: function ($scope) {
     var blogItems = [
       {
