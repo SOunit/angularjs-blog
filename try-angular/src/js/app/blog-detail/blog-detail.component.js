@@ -2,7 +2,7 @@
 
 angular.module('blogDetail').component('blogDetail', {
   templateUrl: 'templates/blog-detail.html',
-  controller: function ($routeParams, $scope) {
+  controller: function ($location, $routeParams, $scope) {
     var blogItems = [
       {
         title: 'Some Title1',
@@ -17,5 +17,18 @@ angular.module('blogDetail').component('blogDetail', {
     ];
 
     $scope.title = `Blog ${$routeParams.id}`;
+    $scope.notFound = true;
+
+    blogItems.forEach((post) => {
+      if (post.id === +$routeParams.id) {
+        $scope.post = post;
+        $scope.notFound = false;
+      }
+    });
+
+    if ($scope.notFound) {
+      console.log('Blog Post Not Found');
+      $location.path('/404');
+    }
   },
 });
